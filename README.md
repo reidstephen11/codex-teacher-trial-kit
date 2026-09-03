@@ -6,7 +6,8 @@ the instructions inside."* The agent unpacks itself into the teacher's own OneDr
 the school context and the boundaries, runs a short onboarding interview, and stops.
 
 This repository is the **source of truth for the kit**. The thing teachers actually get is
-a ZIP built from it.
+a ZIP built from it with `./build-zip.sh`, which strips this README, `docs/` and the git
+metadata — teachers get the kit, not the paperwork behind it.
 
 ## Design principle
 
@@ -35,6 +36,7 @@ context and workflow are the teacher's to restructure, extend or ignore.
 | `My Subject/` | The teacher's own space. Unstructured on purpose. |
 | `docs/design-brief.md` | Why the trial is shaped this way; the decisions behind the kit. |
 | `docs/session-reflection.md` | The cohort-wide reflection format. |
+| `build-zip.sh` | Builds the teacher-facing ZIP. Not included in it. |
 
 ## Privacy position
 
