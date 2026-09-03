@@ -1,0 +1,11 @@
+# Teacher working material — never commit
+Logs/*
+!Logs/README.md
+My Subject/*
+!My Subject/README.md
+my-profile.md
+escalation-*.md
+Collected logs/
+
+# OS
+.DS_Store
