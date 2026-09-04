@@ -35,7 +35,8 @@ context and workflow are the teacher's to restructure, extend or ignore.
 | `Logs/` | Where session logs land. Empty by design. |
 | `My Subject/` | The teacher's own space. Unstructured on purpose. |
 | `docs/design-brief.md` | Why the trial is shaped this way; the decisions behind the kit. |
-| `docs/session-reflection.md` | The cohort-wide reflection format. |
+| `docs/session-reflection.md` | The cohort-wide reflection format. Unused; see the design brief. |
+| `docs/Trial_Operations.md` | Trial-side operations: log collection, synthesis cadence, end-of-trial evaluation. Not in the ZIP. |
 | `build-zip.sh` | Builds the teacher-facing ZIP. Not included in it. |
 
 ## Privacy position

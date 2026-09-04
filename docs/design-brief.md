@@ -127,7 +127,8 @@ Worth securing a named contact from the team who will respond quickly during the
 
 Built 3 September 2026. Kit lives in `Codex Teacher Trial Kit/`, packaged as
 `Codex-Teacher-Trial-Kit.zip`. Trial-side operations (log collection, synthesis cadence and
-prompt, end-of-trial evaluation) are in `Trial_Operations.md`.
+prompt, end-of-trial evaluation) are in `docs/Trial_Operations.md`, which stays in this
+repository and out of the teacher ZIP.
 
 - [x] School context file — `Context/meridan.md`, distilled from `Fable projects/Meridan Context`
 - [x] Constraint boundary — `Context/boundaries.md`, green/amber/red in plain language
@@ -135,10 +136,10 @@ prompt, end-of-trial evaluation) are in `Trial_Operations.md`.
 - [x] Onboarding interview routine — `Routines/onboarding-interview.md`
 - [x] Wrap-up skill — `Routines/wrap-up.md`
 - [x] Shared troubleshooting file starter — `Context/troubleshooting.md`
-- [x] Synthesis cadence and where logs land — `Trial_Operations.md` (fortnightly from week 3,
+- [x] Synthesis cadence and where logs land — `docs/Trial_Operations.md` (fortnightly from week 3,
       proposed; collection point still to decide)
 
-Outstanding decisions are listed at the foot of `Trial_Operations.md`.
+Outstanding decisions are listed at the foot of `docs/Trial_Operations.md`.
 
 ### Note on the session log format
 
