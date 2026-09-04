@@ -111,6 +111,9 @@ The shared troubleshooting file means one person's problem becomes everyone's fi
 5. Agent runs the onboarding interview.
 6. Teacher completes **one real task they brought with them** — a unit they haven't read, a set of feedback comments, whatever is genuinely annoying them. Not a demo task.
 7. Run the wrap-up skill once, with Stephen in the room, so the loop isn't novel when they're working alone.
+8. Collect `Context/my-profile.md` as the baseline, having said out loud how it will be held.
+
+The version to actually hold on the day, with timings and the two things that cannot be recovered afterwards, is `docs/orientation-run-sheet.md`.
 
 ---
 
