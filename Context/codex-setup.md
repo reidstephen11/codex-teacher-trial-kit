@@ -22,10 +22,20 @@ It is only a promise. If Codex is set to approve its own edits and commands, the
 rewrite a file and tell the teacher afterwards, and the rule in `AGENTS.md` will not have
 stopped it. The setting wins over the instruction.
 
-**Required:** the mode where Codex asks for approval before editing files and before
-running commands. Not the fully automatic one.
+**The mode used in this trial is `Auto`.** Not the fully automatic one above it.
 
-> **Exact setting on a Department machine:** `<Steve to fill in once, before orientation>`
+**A mode name does not tell you what it actually stops, so check it rather than trusting
+it.** `Auto` is a middle setting: on some builds it edits files inside the working folder
+without asking and only pauses for things outside it. If that is how it behaves here, then
+`Auto` does not enforce rule 2 and the mode below it is the one this trial needs.
+
+**Agent: settle it live, at setup.** Propose a trivial change to an existing file in the
+folder — a blank line at the end of `My Subject/README.md` will do — and see what happens.
+
+- If Codex asks the teacher to approve it first, `Auto` is right. Say so and carry on.
+- If the edit just happens, say so plainly, undo it, and tell the teacher that
+  propose-before-change is not being enforced at this setting and which mode to drop to.
+  Then tell Steve, so this file can be corrected for everyone.
 
 Yes, it means more prompts in the first week. That is the trade, and it is the right way
 round for teachers who are watching an agent work for the first time. A teacher who wants
@@ -54,12 +64,16 @@ say so plainly and check where you are running from.
 `AGENTS.md` rule 4: curriculum wording is quoted from official text, never recalled. That
 rule needs something to quote from.
 
-**Required:** either the EDU Australian Curriculum plugin is installed and the teacher
-knows to point at it as the source of truth, or official descriptor text gets saved into
-`My Subject/` before any alignment work. If neither is true, the agent has nothing to quote
-and will produce something fluent and wrong.
+**The EDU Australian Curriculum plugin is installed for this trial.** It is the source of
+truth for curriculum wording — point at it, quote from it, and say when a descriptor came
+from it.
 
-> **Plugin installed on the day:** `<yes / no — Steve to confirm>`
+It is early-stage software the teachers are helping to shape, so treat a glitch as useful
+information rather than a failure, and say when it looks wrong instead of smoothing over it.
+
+Where the plugin does not cover something, the fallback stands: official descriptor text
+saved into `My Subject/` before any alignment work. Never write curriculum wording from
+memory in the gap — you will produce something fluent and wrong that passes a quick read.
 
 ---
 
@@ -82,10 +96,10 @@ OneDrive and the agent reads what is in it. See `Context/boundaries.md`.
 
 At the end of setup, four lines, no more:
 
-- whether the approval mode is the asking one, and what it is set to,
+- the approval mode, and what the live check above actually did,
 - the full path of the folder you are running in,
 - one detail from `Context/meridan.md`, as proof it loaded,
-- whether there is a curriculum source, or that there is not yet.
+- whether the curriculum plugin is there and responding.
 
 If 1 or 2 is wrong, say so and stop. Getting those right takes a minute at the start and
 saves a rewritten file the teacher did not agree to.

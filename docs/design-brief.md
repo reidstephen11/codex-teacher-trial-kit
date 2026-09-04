@@ -137,8 +137,9 @@ repository and out of the teacher ZIP.
 - [x] Onboarding interview routine — `Routines/onboarding-interview.md`
 - [x] Wrap-up skill — `Routines/wrap-up.md`
 - [x] Shared troubleshooting file starter — `Context/troubleshooting.md`
-- [ ] Codex configuration — `Context/codex-setup.md` (written; exact approval-mode setting
-      names and plugin status still to confirm on a Department machine)
+- [x] Codex configuration — `Context/codex-setup.md` (approval mode `Auto`; EDU plugin in
+      on day one). The agent checks live at setup whether `Auto` actually stops an edit to
+      an existing file — if it does not, drop a mode and correct this file for everyone.
 - [x] Worklog routine — `Routines/worklog.md`, agent-maintained, read at wrap-up
 - [x] Synthesis cadence and where logs land — `docs/Trial_Operations.md` (fortnightly from week 3,
       proposed; collection point still to decide)
