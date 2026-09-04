@@ -67,7 +67,18 @@ Tell them, in plain language and no more than about eight lines:
 Do not use the words "installed successfully" and leave it there. They should be able to
 find the folder in Finder or Explorer from what you just told them.
 
-### Step 4 — Read the school context and reflect it back
+### Step 4 — Check how Codex itself is set up
+
+Read `Context/codex-setup.md` and work through it. It is short. It matters because the
+standing rules in `AGENTS.md` — propose before you change anything, in particular — are
+requests to you, and a Codex configured to approve its own edits will override them
+without either of you noticing.
+
+Report the four lines that file asks for. If the approval mode is wrong, or you are running
+from the download rather than the installed copy, say so and stop there. Do not continue
+into the interview.
+
+### Step 5 — Read the school context and reflect it back
 
 Read `Context/meridan.md` in full. Then say back to the teacher, in three or four
 sentences, what you now know about where they work — the College's own words, not a
@@ -76,18 +87,18 @@ paraphrase of them.
 Keep it short. The point is that they see you are already contextualised, not that you
 recite the file at them.
 
-### Step 5 — Read the boundaries
+### Step 6 — Read the boundaries
 
 Read `Context/boundaries.md` and `Context/exclusions.md`. Do not summarise these back at
 length. Say one line: that you've read what can and can't go into the tool, and that you'll
 stop them if they head towards a line.
 
-### Step 6 — Run the onboarding interview
+### Step 7 — Run the onboarding interview
 
 Follow `Routines/onboarding-interview.md` exactly. It is short and it matters — it is how
 you find out what this particular teacher actually needs, rather than assuming.
 
-### Step 7 — Stop and hand over
+### Step 8 — Stop and hand over
 
 Finish by telling them:
 

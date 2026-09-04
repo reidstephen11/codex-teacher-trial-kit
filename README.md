@@ -30,12 +30,15 @@ context and workflow are the teacher's to restructure, extend or ignore.
 | `Context/boundaries.md` | What can and can't go into the tool, in plain language. |
 | `Context/exclusions.md` | Things the agent must not do or touch. |
 | `Context/troubleshooting.md` | Common failures and how to get unstuck. |
+| `Context/codex-setup.md` | The Codex configuration the kit assumes, and why. Checked at setup. |
 | `Routines/onboarding-interview.md` | The short first-session interview. |
-| `Routines/wrap-up.md` | End-of-session routine that drafts the log. |
+| `Routines/worklog.md` | The running record the agent keeps as it works. Teacher never writes in it. |
+| `Routines/wrap-up.md` | End-of-session routine that drafts the log, read off the worklog. |
 | `Logs/` | Where session logs land. Empty by design. |
 | `My Subject/` | The teacher's own space. Unstructured on purpose. |
 | `docs/design-brief.md` | Why the trial is shaped this way; the decisions behind the kit. |
-| `docs/session-reflection.md` | The cohort-wide reflection format. |
+| `docs/session-reflection.md` | The cohort-wide reflection format. Unused; see the design brief. |
+| `docs/Trial_Operations.md` | Trial-side operations: log collection, synthesis cadence, end-of-trial evaluation. Not in the ZIP. |
 | `build-zip.sh` | Builds the teacher-facing ZIP. Not included in it. |
 
 ## Privacy position

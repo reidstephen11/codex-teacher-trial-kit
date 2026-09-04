@@ -106,10 +106,11 @@ The shared troubleshooting file means one person's problem becomes everyone's fi
 
 1. Email the ZIP; teachers download it and point Codex at it.
 2. Agent unpacks, installs into OneDrive, and reports back what it did and where things now live.
-3. Agent reads the school context and reflects it back to them. This is the moment it lands, because it's already contextualised.
-4. Agent runs the onboarding interview.
-5. Teacher completes **one real task they brought with them** — a unit they haven't read, a set of feedback comments, whatever is genuinely annoying them. Not a demo task.
-6. Run the wrap-up skill once, with Stephen in the room, so the loop isn't novel when they're working alone.
+3. Agent checks how Codex itself is configured against `Context/codex-setup.md` and reports back — approval mode, which folder it is running in, proof the context loaded, curriculum source. Approval mode is the one that cannot be left to chance: propose-before-change is an instruction in `AGENTS.md`, and a Codex set to approve its own edits overrides it silently. Confirm the exact setting names on a Department machine before the day and write them into that file, so every teacher gets the same version.
+4. Agent reads the school context and reflects it back to them. This is the moment it lands, because it's already contextualised.
+5. Agent runs the onboarding interview.
+6. Teacher completes **one real task they brought with them** — a unit they haven't read, a set of feedback comments, whatever is genuinely annoying them. Not a demo task.
+7. Run the wrap-up skill once, with Stephen in the room, so the loop isn't novel when they're working alone.
 
 ---
 
@@ -127,7 +128,8 @@ Worth securing a named contact from the team who will respond quickly during the
 
 Built 3 September 2026. Kit lives in `Codex Teacher Trial Kit/`, packaged as
 `Codex-Teacher-Trial-Kit.zip`. Trial-side operations (log collection, synthesis cadence and
-prompt, end-of-trial evaluation) are in `Trial_Operations.md`.
+prompt, end-of-trial evaluation) are in `docs/Trial_Operations.md`, which stays in this
+repository and out of the teacher ZIP.
 
 - [x] School context file — `Context/meridan.md`, distilled from `Fable projects/Meridan Context`
 - [x] Constraint boundary — `Context/boundaries.md`, green/amber/red in plain language
@@ -135,10 +137,13 @@ prompt, end-of-trial evaluation) are in `Trial_Operations.md`.
 - [x] Onboarding interview routine — `Routines/onboarding-interview.md`
 - [x] Wrap-up skill — `Routines/wrap-up.md`
 - [x] Shared troubleshooting file starter — `Context/troubleshooting.md`
-- [x] Synthesis cadence and where logs land — `Trial_Operations.md` (fortnightly from week 3,
+- [ ] Codex configuration — `Context/codex-setup.md` (written; exact approval-mode setting
+      names and plugin status still to confirm on a Department machine)
+- [x] Worklog routine — `Routines/worklog.md`, agent-maintained, read at wrap-up
+- [x] Synthesis cadence and where logs land — `docs/Trial_Operations.md` (fortnightly from week 3,
       proposed; collection point still to decide)
 
-Outstanding decisions are listed at the foot of `Trial_Operations.md`.
+Outstanding decisions are listed at the foot of `docs/Trial_Operations.md`.
 
 ### Note on the session log format
 

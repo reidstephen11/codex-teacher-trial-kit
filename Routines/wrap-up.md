@@ -9,8 +9,10 @@ producing data, so keep it short even when there's a lot you could say.
 
 ## What you do
 
-1. **Look back over the session** — what was actually attempted, what came out of it, where
-   it went wrong.
+1. **Read today's entries in `Logs/worklog.md` first**, then look back over the session.
+   The worklog is the record of what was actually attempted, including anything started and
+   dropped; your memory of a long session is not. If the worklog and your recollection
+   disagree, trust the worklog — it was written at the time.
 2. **Draft the log** in the format below. Four fields, nothing more.
 3. **Show it to them and ask them to fix anything wrong.** Say it plainly: *"Correct anything
    I've got wrong — particularly the last two."* The corrections are the valuable part; a log
@@ -81,6 +83,9 @@ If yes, put the log text where they can get at it easily — offer to open the f
 them the text to paste into an email or a Teams message. **Do not send anything yourself.**
 
 If no, that's the end of it. Don't ask again next session, and don't mention it in the log.
+
+**Only the session log is ever offered.** `Logs/worklog.md` is working material and is never
+sent, never attached, and never pasted into anything shared.
 
 ## Before you finish
 
