@@ -4,42 +4,58 @@
 this file, your changes will be overwritten when an updated copy goes round.
 
 Everything else in this folder tells the agent how to behave. This file is about how Codex
-itself is set up, which is a different thing — a rule in `AGENTS.md` is a request the agent
-can be configured to ignore. Four things need to be true before any of the rest works.
+itself is set up, which is a different thing — and the gap between the two is the point.
+Some of what `AGENTS.md` asks for is not enforced by any setting. Four things to establish
+before the rest of the kit means anything.
 
-**Agent: check these at the end of setup, report what you found, and stop if item 1 or
-item 2 is wrong.** Do not carry on and hope.
+**Agent: work through these at the end of setup and report what you found.** If item 2 is
+wrong, stop there — do not carry on and hope.
 
 ---
 
-## 1. The agent asks before it changes anything
+## 1. Know what `Auto` actually protects
 
-`AGENTS.md` says: propose before you move, rename, delete or rewrite an existing file.
-That is the promise the whole trial rests on — a teacher trusts this because nothing
-happens to their work without them saying yes.
+**The trial runs in `Auto`.** What that means, plainly:
 
-It is only a promise. If Codex is set to approve its own edits and commands, the agent can
-rewrite a file and tell the teacher afterwards, and the rule in `AGENTS.md` will not have
-stopped it. The setting wins over the instruction.
+- **Outside this folder, nothing happens without the teacher's say-so.** Auto stops and
+  asks. That boundary is real, and it is the protection worth having.
+- **Inside this folder, the agent can create, edit and overwrite files without asking.**
 
-**The mode used in this trial is `Auto`.** Not the fully automatic one above it.
+`AGENTS.md` rule 2 — propose before you move, rename, delete or rewrite an existing file —
+is therefore an **instruction, not a lock**. Auto will not stop an agent that ignores it.
+Follow the rule anyway; it is the difference between a teacher trusting this and not. But
+do not tell a teacher that the setting is what keeps their work safe, because it is not.
 
-**A mode name does not tell you what it actually stops, so check it rather than trusting
-it.** `Auto` is a middle setting: on some builds it edits files inside the working folder
-without asking and only pauses for things outside it. If that is how it behaves here, then
-`Auto` does not enforce rule 2 and the mode below it is the one this trial needs.
+**Agent: show them this at setup, don't describe it.** They should watch it happen once,
+deliberately, in the first ten minutes rather than discovering it on a file that mattered.
 
-**Agent: settle it live, at setup.** Propose a trivial change to an existing file in the
-folder — a blank line at the end of `My Subject/README.md` will do — and see what happens.
+1. Add a blank line to the end of `My Subject/README.md`. It goes through without a prompt.
+   Say so, and undo it.
+2. Then try to touch something outside the folder — reading the parent directory is enough.
+   Codex will stop and ask. Say so, and decline it.
 
-- If Codex asks the teacher to approve it first, `Auto` is right. Say so and carry on.
-- If the edit just happens, say so plainly, undo it, and tell the teacher that
-  propose-before-change is not being enforced at this setting and which mode to drop to.
-  Then tell Steve, so this file can be corrected for everyone.
+Then say, in two lines: inside this folder you can change things without asking, and you
+are instructed to propose first; outside it, they get asked every time.
 
-Yes, it means more prompts in the first week. That is the trade, and it is the right way
-round for teachers who are watching an agent work for the first time. A teacher who wants
-to loosen it later, having seen what it does, can — it is their machine.
+**Three things follow from that, and they matter more than the setting does.**
+
+- **The recovery path is OneDrive version history**, not the approval prompt. If the agent
+  overwrites something it shouldn't have: right-click the file, Version History, restore.
+  It is in `Context/troubleshooting.md`. Tell them at setup, before they need it.
+- **The supplied files stay supplied.** Never write into `Context/meridan.md`,
+  `boundaries.md`, `exclusions.md`, `codex-setup.md` or `troubleshooting.md`. Auto would let
+  you. Don't.
+- **"No student files in this folder" is now load-bearing.** Anything in here is reachable
+  and editable without a prompt. That is the reason for the rule, not an abstract one.
+
+**During setup itself, expect to be asked.** Copying the kit from the download into OneDrive
+crosses outside whatever folder Codex started in, so Auto will stop and ask. That prompt is
+the boundary working, not a failure — say yes and carry on, and say to the teacher that this
+is exactly the behaviour described above.
+
+A teacher who wants tighter control can say so and work in a read-only mode, approving each
+step. It is their machine. Most will not want to, and Auto is the right default for the
+trial — but they should know which one they are in.
 
 ## 2. Codex is open in the installed folder
 
@@ -96,10 +112,10 @@ OneDrive and the agent reads what is in it. See `Context/boundaries.md`.
 
 At the end of setup, four lines, no more:
 
-- the approval mode, and what the live check above actually did,
+- what the two checks in item 1 actually did — the in-folder edit and the outside-folder stop,
 - the full path of the folder you are running in,
 - one detail from `Context/meridan.md`, as proof it loaded,
 - whether the curriculum plugin is there and responding.
 
-If 1 or 2 is wrong, say so and stop. Getting those right takes a minute at the start and
-saves a rewritten file the teacher did not agree to.
+If item 2 is wrong — you are running from the download, or a folder that has no
+`AGENTS.md` — say so and stop. Everything else in this folder is void until that is fixed.

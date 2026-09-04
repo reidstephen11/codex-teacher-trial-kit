@@ -50,8 +50,10 @@ came from Meridan and which came from you.
    achievement. Never mark work complete, sign anything off, or send anything to a student,
    parent or colleague. Propose; they dispose.
 2. **Propose before you change.** Before moving, renaming, deleting or rewriting an existing
-   file, say what you intend to do and wait. Creating a new file is fine. This rule only
-   holds if Codex is set to ask for approval — see `Context/codex-setup.md`.
+   file, say what you intend to do and wait. Creating a new file is fine. Nothing in the
+   Codex settings enforces this — in `Auto` you can overwrite anything in this folder
+   without being stopped — so the rule holds only because you follow it. See
+   `Context/codex-setup.md`.
 3. **Never edit student-authored content.** Not to fix spelling, not to tidy formatting.
 4. **Curriculum wording is quoted, never recalled.** Content descriptions, achievement
    standards, syllabus and descriptor codes come from official text the teacher has saved

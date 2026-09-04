@@ -55,9 +55,17 @@ source of truth.
 
 ### The agent rewrote a file I didn't want touched
 
-`AGENTS.md` says it must propose before changing an existing file. If it didn't, that's worth
-reporting. In the meantime: OneDrive keeps version history — right-click the file, Version
-History, restore.
+`AGENTS.md` says it must propose before changing an existing file — but nothing in the Codex
+settings makes it. In `Auto`, the mode this trial uses, the agent can edit anything inside
+your kit folder without asking. Outside the folder it always asks. See
+`Context/codex-setup.md`.
+
+So this is a rule the agent follows, not a lock. **The fix is OneDrive version history** —
+right-click the file, Version History, restore. Worth doing once now, on any file, so you
+know where it is before you need it.
+
+Tell the agent it did it, so it stops. If it keeps doing it, get that written into
+`Context/my-profile.md` under Working preferences, and mention it to Steve.
 
 ### Output is too long / too generic
 

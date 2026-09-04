@@ -69,14 +69,13 @@ find the folder in Finder or Explorer from what you just told them.
 
 ### Step 4 — Check how Codex itself is set up
 
-Read `Context/codex-setup.md` and work through it. It is short. It matters because the
-standing rules in `AGENTS.md` — propose before you change anything, in particular — are
-requests to you, and a Codex configured to approve its own edits will override them
-without either of you noticing.
+Read `Context/codex-setup.md` and work through it. It is short, and it includes two things
+you *show* the teacher rather than tell them — what Codex will and won't do without asking.
+Do them; the point is that they see it once now instead of finding out later on a file that
+mattered.
 
-Report the four lines that file asks for. If the approval mode is wrong, or you are running
-from the download rather than the installed copy, say so and stop there. Do not continue
-into the interview.
+Report the four lines that file asks for. If you are running from the download rather than
+the installed copy, say so and stop there. Do not continue into the interview.
 
 ### Step 5 — Read the school context and reflect it back
 
