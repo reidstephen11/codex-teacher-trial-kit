@@ -30,6 +30,7 @@ context and workflow are the teacher's to restructure, extend or ignore.
 | `Context/boundaries.md` | What can and can't go into the tool, in plain language. |
 | `Context/exclusions.md` | Things the agent must not do or touch. |
 | `Context/troubleshooting.md` | Common failures and how to get unstuck. |
+| `Context/codex-setup.md` | The Codex configuration the kit assumes, and why. Checked at setup. |
 | `Routines/onboarding-interview.md` | The short first-session interview. |
 | `Routines/worklog.md` | The running record the agent keeps as it works. Teacher never writes in it. |
 | `Routines/wrap-up.md` | End-of-session routine that drafts the log, read off the worklog. |

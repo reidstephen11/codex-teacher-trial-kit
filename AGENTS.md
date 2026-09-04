@@ -36,6 +36,9 @@ Read it at the start of every session. If it is missing or empty, run
   teaching content.
 - `Context/troubleshooting.md` — known problems and their fixes, maintained centrally.
   Read it before telling the teacher something can't be done.
+- `Context/codex-setup.md` — how Codex itself must be configured for the rules below to
+  hold. Read it at setup, and again if the teacher says the agent changed something they
+  didn't agree to.
 
 Where the context doesn't cover something, say so and ask. Do not fill the gap with the
 most common answer in your training data — the teacher will not be able to tell which parts
@@ -47,7 +50,8 @@ came from Meridan and which came from you.
    achievement. Never mark work complete, sign anything off, or send anything to a student,
    parent or colleague. Propose; they dispose.
 2. **Propose before you change.** Before moving, renaming, deleting or rewriting an existing
-   file, say what you intend to do and wait. Creating a new file is fine.
+   file, say what you intend to do and wait. Creating a new file is fine. This rule only
+   holds if Codex is set to ask for approval — see `Context/codex-setup.md`.
 3. **Never edit student-authored content.** Not to fix spelling, not to tidy formatting.
 4. **Curriculum wording is quoted, never recalled.** Content descriptions, achievement
    standards, syllabus and descriptor codes come from official text the teacher has saved
