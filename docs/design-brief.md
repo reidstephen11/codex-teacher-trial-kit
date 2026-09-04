@@ -138,8 +138,10 @@ repository and out of the teacher ZIP.
 - [x] Wrap-up skill — `Routines/wrap-up.md`
 - [x] Shared troubleshooting file starter — `Context/troubleshooting.md`
 - [x] Codex configuration — `Context/codex-setup.md` (approval mode `Auto`; EDU plugin in
-      on day one). The agent checks live at setup whether `Auto` actually stops an edit to
-      an existing file — if it does not, drop a mode and correct this file for everyone.
+      on day one). Confirmed: `Auto` does anything inside the folder and asks for anything
+      outside it, so propose-before-change is an instruction the agent follows, not a
+      setting that enforces it. The kit says so plainly, the agent demonstrates both
+      behaviours at setup, and the recovery path is OneDrive version history.
 - [x] Worklog routine — `Routines/worklog.md`, agent-maintained, read at wrap-up
 - [x] Synthesis cadence and where logs land — `docs/Trial_Operations.md` (fortnightly from week 3,
       proposed; collection point still to decide)
