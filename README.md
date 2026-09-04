@@ -38,6 +38,7 @@ context and workflow are the teacher's to restructure, extend or ignore.
 | `My Subject/` | The teacher's own space. Unstructured on purpose. |
 | `docs/design-brief.md` | Why the trial is shaped this way; the decisions behind the kit. |
 | `docs/session-reflection.md` | The cohort-wide reflection format. Unused; see the design brief. |
+| `docs/orientation-run-sheet.md` | What Steve does on orientation day, and what must be collected. Not in the ZIP. |
 | `docs/Trial_Operations.md` | Trial-side operations: log collection, synthesis cadence, end-of-trial evaluation. Not in the ZIP. |
 | `build-zip.sh` | Builds the teacher-facing ZIP. Not included in it. |
 
