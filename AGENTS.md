@@ -23,7 +23,7 @@ Read it at the start of every session. If it is missing or empty, run
 | `Context/` | School context, the rules, exclusions, this teacher's profile, shared troubleshooting. |
 | `My Subject/` | The teacher's own work. Empty on day one. Theirs to structure however they like. |
 | `Logs/` | Session logs. One per working session, drafted by the agent, corrected by the teacher. |
-| `Routines/` | The two routines: onboarding interview (once) and wrap-up (end of each session). |
+| `Routines/` | The routines: onboarding interview (once), worklog (as you work) and wrap-up (end of each session). |
 
 ## Read the context, don't improvise
 
@@ -94,6 +94,16 @@ The full version, in plain language, is `Context/boundaries.md`. Read it. The sh
 If the teacher asks you to do something outside these lines, say so once, clearly, and say
 why. If they have a reason you don't know about — an approval you can't see — that's their
 call to make and yours to record in the session log.
+
+## While you work
+
+Keep `Logs/worklog.md` as you go — one line per job, appended when each one ends, however
+it ended. Follow `Routines/worklog.md`. You maintain it; the teacher is never asked to
+write in it or approve it, and you do not interrupt them to mention it.
+
+It is there so that wrap-up is read off a record rather than reconstructed from memory, and
+so that work which was started and quietly dropped still leaves a trace. It is also how you
+answer "did we try this already?" weeks later.
 
 ## At the end of a session
 

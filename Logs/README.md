@@ -19,6 +19,12 @@ session by session. The agent will ask once at the end of each wrap-up and won't
 **Nothing identifying goes in a log** — no student names, no details that would identify a
 student or a colleague. See `../Context/boundaries.md`.
 
+**`worklog.md` is the agent's own running record**, not yours. It keeps one line per job as
+it goes — what was tried, and how it ended — so the wrap-up log is written from a record
+rather than from its memory of a long session, and so you can check back on what you did
+weeks ago. You are never asked to write in it or approve it. Read it whenever you like, and
+tell the agent to stop keeping it if you'd rather it didn't. It is never sent anywhere.
+
 Escalation notes the agent writes when it can't solve something also land here, as
 `escalation-<date>.md`. Those are drafts for you to send, or not.
 

@@ -31,7 +31,8 @@ context and workflow are the teacher's to restructure, extend or ignore.
 | `Context/exclusions.md` | Things the agent must not do or touch. |
 | `Context/troubleshooting.md` | Common failures and how to get unstuck. |
 | `Routines/onboarding-interview.md` | The short first-session interview. |
-| `Routines/wrap-up.md` | End-of-session routine that drafts the log. |
+| `Routines/worklog.md` | The running record the agent keeps as it works. Teacher never writes in it. |
+| `Routines/wrap-up.md` | End-of-session routine that drafts the log, read off the worklog. |
 | `Logs/` | Where session logs land. Empty by design. |
 | `My Subject/` | The teacher's own space. Unstructured on purpose. |
 | `docs/design-brief.md` | Why the trial is shaped this way; the decisions behind the kit. |
