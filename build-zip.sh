@@ -1,27 +1,23 @@
 #!/usr/bin/env bash
-# Build the ZIP teachers receive.
-#
-# The repo root doubles as the kit, so this strips the things that are for us,
-# not for them: git metadata, the repo README, and docs/.
-# Output: ../Codex-Teacher-Trial-Kit.zip
+# Build the teacher kit from an explicit list of files in a Git commit.
+# Usage: ./build-zip.sh [commit-or-tag]  (default: HEAD)
 set -euo pipefail
 cd "$(dirname "$0")"
-
+REF="${1:-HEAD}"
+COMMIT="$(git rev-parse --verify "${REF}^{commit}")"
 OUT="../Codex-Teacher-Trial-Kit.zip"
-rm -f "$OUT"
+TEMP_ARCHIVE="$(mktemp "${OUT}.tmp.XXXXXX")"
+trap 'rm -f "$TEMP_ARCHIVE"' EXIT
 
-zip -r -q "$OUT" . \
-  -x '.git/*' '.git' \
-  -x '.gitignore' \
-  -x 'README.md' \
-  -x 'docs/*' \
-  -x 'build-zip.sh' \
-  -x '.DS_Store' '*/.DS_Store' \
-  -x 'Logs/*' -x 'My Subject/*' \
-  -x 'my-profile.md' -x 'escalation-*.md'
+# Exact paths only: never archive the working directory or entire context folders.
+# git archive records COMMIT in the ZIP comment for provenance.
+git archive --format=zip --output="$TEMP_ARCHIVE" "$COMMIT" -- \
+  AGENTS.md START-HERE.md \
+  Context/meridan.md Context/boundaries.md Context/exclusions.md \
+  Context/troubleshooting.md Context/codex-setup.md \
+  Routines/onboarding-interview.md Routines/worklog.md Routines/wrap-up.md \
+  Logs/README.md 'My Subject/README.md'
 
-# Logs/ and My Subject/ must still exist for the teacher, just empty.
-zip -q "$OUT" 'Logs/README.md' 'My Subject/README.md'
-
-echo "Built $OUT"
-unzip -l "$OUT" | tail -n +4 | head -20
+# Replace an earlier build only after the complete archive was created.
+mv -f "$TEMP_ARCHIVE" "$OUT"
+printf 'Built %s from commit %s\n' "$OUT" "$COMMIT"

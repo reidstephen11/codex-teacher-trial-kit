@@ -1,9 +1,9 @@
 # Onboarding interview
 
-Run this **once**, during setup. It takes about five minutes and it is the most valuable
-five minutes in the whole trial — everything you do afterwards works from what the teacher
-says here, and their answers are the baseline the trial is measured against at the end of
-the year.
+Run this **once**, after the installed-project and context checks in `START-HERE.md`.
+If a partial profile exists, resume its pending questions. Save each answer as it arrives;
+do not infer that a partial profile means the interview is complete. Keep it brief: the
+teacher's answers guide the work and provide the baseline for the end-of-year comparison.
 
 ## Before you start
 

@@ -1,133 +1,95 @@
 # Start here
 
-**If you are a teacher reading this:** you don't need to read any further. Open Codex,
-point it at this folder (or the ZIP it came in) and say:
+**For teachers:** Steve will be in the room to help. Unpack the supplied ZIP, open
+that folder as a project in Codex, and say:
 
-> Open this and follow the instructions inside.
+> Read START-HERE.md and help me get set up.
 
-That's it. The agent will read the rest of this file, set itself up in your OneDrive, and
-then tell you what it did. Give it five minutes and answer its questions.
+Bring one real job you want help with. We will set up your workspace, answer a few
+short questions, do that job, and practise saying **"wrap up"**.
 
-If something goes wrong, skip to **If the setup fails** at the bottom.
+Student work is welcome only when it is **deidentified and contains no sensitive
+information**. Prepare that copy before giving it to Codex; see `Context/boundaries.md`.
 
----
+## Agent: setup and first useful task
 
-## Everything below this line is for the agent
+Keep this conversational. Steve is facilitating in the room; a setup problem should
+not become a long troubleshooting exercise. Ask one necessary question at a time.
 
-You are being run by a teacher at Meridan State College who is part of a voluntary trial of
-agentic AI. This may well be the first time they have watched an agent do anything. Your
-conduct in the next ten minutes sets what they expect from the whole trial.
+### 1. Establish the location
 
-Your job right now is **installation and orientation**. Do not draft any teaching resource,
-unit, lesson or feedback in this session, even if asked — say you'll do it first thing next
-session, once the setup is finished.
+Say where the kit currently is. Read `Context/setup-state.md` if it exists. If setup
+is complete and the current project is the recorded installed folder, skip installation
+and the interview; read the teacher's profile and help with their job.
 
-### Step 1 — Work out where you are and say so
+If this is already the intended working folder, confirm that once and use it in place.
+Otherwise locate the teacher's Department OneDrive and propose a destination such as
+`Codex Trial/`. Check the actual path; do not infer it from the operating system.
+If multiple OneDrive accounts exist, ask which is the Department account. If OneDrive
+is unavailable, ask Steve to help rather than silently choosing personal cloud storage.
 
-Before you touch anything, tell the teacher in two or three lines:
+### 2. Copy safely, or resume an existing installation
 
-- what this folder is,
-- where it currently sits on their machine,
-- and that you are about to copy it into their OneDrive.
+Agree the destination once. Copy the kit, keeping the download intact. If the destination
+already exists, inspect its setup state and supplied files first. Do not merge over or
+replace existing files, profiles or work. Resume that installation, or agree a different
+empty destination. If source and destination are the same, do not copy.
 
-If the kit is still inside a ZIP, unpack it to a temporary location first.
+Verify the supplied files exist at the destination. Record the installed path and the
+completed step in `Context/setup-state.md` there. This is a short local progress note,
+not teaching material. Update it after each completed setup step so an interrupted
+session can resume. Never mark a check passed unless it was actually performed.
 
-### Step 2 — Agree an install location, then install
+### 3. Open the installed project
 
-Propose a location inside the teacher's **own OneDrive**, so it syncs to their laptop and
-backs itself up. On a Department-managed Mac or PC this is usually a path like:
+Copying files or changing a shell directory does not change the Codex project's location.
+If this task is still attached to the download, have the teacher open/add the installed
+folder as a project and start a fresh task there. Give the exact path and this prompt:
 
-- macOS — `~/Library/CloudStorage/OneDrive-DepartmentofEducation/Codex Trial/`
-- Windows — `%USERPROFILE%\OneDrive - Department of Education\Codex Trial\`
+> Read START-HERE.md and resume my setup from Context/setup-state.md.
 
-Do not guess. Check that the OneDrive folder actually exists before proposing it, and if
-you find more than one OneDrive folder, show the teacher the list and ask which is theirs.
+Stop this task at the handoff. Do not run the interview in the download. In the fresh task,
+check the actual project/working directory against the recorded installed path. If you
+cannot verify it, say so and have Steve help confirm the selected project.
 
-Show the full path you intend to use and wait for a yes. If they'd rather it went
-somewhere else, use their location — it is their machine.
+### 4. Check the setup
 
-Then copy the whole kit there. **Copy, don't move**, so the original download is still
-intact if anything goes wrong. Verify afterwards that the files are actually at the
-destination, and say so plainly if they are not.
+Read `Context/codex-setup.md` and perform its checks in the installed project. Read
+`Context/meridan.md`, `Context/boundaries.md` and `Context/exclusions.md`. Give one specific
+school-context detail and one sentence about the student-work boundary. Keep the
+school context, boundaries, exclusions, setup guide and shared troubleshooting unchanged.
 
-From this point on, work in the installed copy, not the download.
+Record which checks passed and any limitation in the setup state. A missing curriculum
+tool blocks unsupported curriculum claims, not unrelated teaching work.
 
-### Step 3 — Report what you did
+### 5. Capture the teacher's profile
 
-Tell them, in plain language and no more than about eight lines:
+If `Context/my-profile.md` exists, read it and resume any clearly unfinished interview;
+do not start again. Otherwise follow `Routines/onboarding-interview.md`. Save answers
+as they arrive so an interruption does not lose them. Keep pending questions explicit.
+Show the completed profile for correction, then record that the interview is complete.
+Teacher-requested profile corrections are already authorised.
 
-- the folder you created and where it is,
-- what is in it, one line each,
-- that `Context/boundaries.md` is the rules file and is worth two minutes of their time,
-- that everything in the folder is theirs to change, including your own instructions in
-  `AGENTS.md`,
-- and what happens next (you're about to read the school context, then ask them some
-  questions).
+### 6. Do one real job, then practise wrap-up
 
-Do not use the words "installed successfully" and leave it there. They should be able to
-find the folder in Finder or Explorer from what you just told them.
+Mark setup complete once the project, context and profile are ready; preserve any recorded
+tool limitation. Suggest the smallest useful version of the teacher's job and proceed
+when they choose it. Teaching work is allowed in this session after setup.
 
-### Step 4 — Check how Codex itself is set up
+Save the result, show the teacher where it is, and make clear what needs their review.
+If they have no job ready, offer one short resource task using non-sensitive material.
+At Steve's wrap-up cue, follow `Routines/wrap-up.md`, even if the job is unfinished.
+Before leaving, show how to reopen this same project tomorrow.
 
-Read `Context/codex-setup.md` and work through it. It is short, and it includes two things
-you *show* the teacher rather than tell them — what Codex will and won't do without asking.
-Do them; the point is that they see it once now instead of finding out later on a file that
-mattered.
+## If setup fails
 
-Report the four lines that file asks for. If you are running from the download rather than
-the installed copy, say so and stop there. Do not continue into the interview.
+Steve is in the room: tell him which step failed and show the error without private data.
+The manual route uses the same checks:
 
-### Step 5 — Read the school context and reflect it back
+1. Copy the unpacked kit into an empty folder in Department OneDrive, preserving any
+   existing installation.
+2. Open that installed folder as a project in Codex and start a fresh task.
+3. Say: **"Read START-HERE.md. This is my installed folder; resume setup here."**
 
-Read `Context/meridan.md` in full. Then say back to the teacher, in three or four
-sentences, what you now know about where they work — the College's own words, not a
-paraphrase of them.
-
-Keep it short. The point is that they see you are already contextualised, not that you
-recite the file at them.
-
-### Step 6 — Read the boundaries
-
-Read `Context/boundaries.md` and `Context/exclusions.md`. Do not summarise these back at
-length. Say one line: that you've read what can and can't go into the tool, and that you'll
-stop them if they head towards a line.
-
-### Step 7 — Run the onboarding interview
-
-Follow `Routines/onboarding-interview.md` exactly. It is short and it matters — it is how
-you find out what this particular teacher actually needs, rather than assuming.
-
-### Step 8 — Stop and hand over
-
-Finish by telling them:
-
-- what exists now,
-- that the next thing to do is **one real job they brought with them** — something that is
-  genuinely annoying them today, not a demo,
-- and that at the end of a working session they should say "wrap up" and you will draft the
-  session log for them to correct.
-
-Then stop. Do not start the real job in this session unless they ask you to.
-
-### Rules for this session
-
-- One question at a time. Wait for the answer.
-- Short answers get written down as they were said. Do not inflate a one-line answer into
-  three paragraphs of educational prose.
-- Never write anything into `Context/meridan.md`, `Context/boundaries.md`,
-  `Context/exclusions.md` or `Context/troubleshooting.md` during setup. Those are supplied.
-- If a step fails, say which step and what the error was. Do not carry on as though it
-  worked.
-
----
-
-## If the setup fails
-
-Nothing here is magic — it is a folder of text files. If the agent cannot install it:
-
-1. Copy this whole folder into your OneDrive by hand, anywhere sensible.
-2. Open Codex in that folder.
-3. Say: *"Read AGENTS.md, then run the onboarding interview in Routines/."*
-
-That gets you to the same place. If you're stuck, tell your agent you're stuck — it will try
-to sort it out and only involve Steve if it can't.
+Outside the facilitated session, use `Context/troubleshooting.md`. Never report that setup
+succeeded when a step failed.

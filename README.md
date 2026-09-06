@@ -1,13 +1,20 @@
 # Codex Teacher Trial Kit
 
 A self-installing scaffold for a voluntary teacher trial of agentic AI at Meridan State
-College. Teachers receive it as a ZIP, point Codex at it, and say *"Open this and follow
-the instructions inside."* The agent unpacks itself into the teacher's own OneDrive, reads
-the school context and the boundaries, runs a short onboarding interview, and stops.
+College. Teachers receive a ZIP and open the unpacked folder as a Codex project.
+With Steve in the room, the agent helps copy it into Department OneDrive, hands over to
+the installed project, checks setup, captures a short profile and helps with one real job.
+Everyone practises wrap-up before leaving. Deidentified, non-sensitive student work is
+permitted; original student writing stays unchanged and feedback is saved separately.
 
 This repository is the **source of truth for the kit**. The thing teachers actually get is
-a ZIP built from it with `./build-zip.sh`, which strips this README, `docs/` and the git
-metadata — teachers get the kit, not the paperwork behind it.
+a ZIP built with `./build-zip.sh [commit-or-tag]` (default: `HEAD`). The builder archives
+an explicit list of supplied files from that Git commit, never the working directory.
+Commit approved edits before building. The ZIP's archive comment records the commit SHA.
+Profiles, setup state, teaching work, collected logs and maintainer documents are excluded,
+even if accidentally tracked. GitHub remains the source of truth for shared kit changes.
+
+Run `python3 -m unittest discover -s tests -v` to check packaging before distribution.
 
 ## Design principle
 
@@ -44,12 +51,14 @@ context and workflow are the teacher's to restructure, extend or ignore.
 
 ## Privacy position
 
-Each teacher's folder lives in **their own OneDrive**. Nothing syncs anywhere else. Sending
+Each teacher's folder lives in **their Department OneDrive**. The kit does not automatically
+collect work or logs for Steve. AI processing is not promised to be offline. Sending
 a log is opt-in, session by session — the agent offers once at the end of a wrap-up and
 never sends anything itself. No student names or identifying details go into any log.
 
-`.gitignore` excludes `Logs/`, `My Subject/` and `my-profile.md` so that working material
-cannot be committed by accident.
+`.gitignore` excludes working logs, teaching files, profiles and setup state to reduce
+accidental commits. Ignore rules do not remove material already tracked. The distribution
+builder uses a separate allowlist.
 
 ## Status
 

@@ -1,121 +1,87 @@
-# Codex setup — the config this kit assumes
+# Codex setup
 
-**Maintained centrally by Steve Reid**, like `troubleshooting.md`. Teachers: don't edit
-this file, your changes will be overwritten when an updated copy goes round.
+Maintained centrally by Steve Reid. Check this in the installed project, before the
+onboarding interview. Steve is in the room during orientation and can help with the UI.
 
-Everything else in this folder tells the agent how to behave. This file is about how Codex
-itself is set up, which is a different thing — and the gap between the two is the point.
-Some of what `AGENTS.md` asks for is not enforced by any setting. Four things to establish
-before the rest of the kit means anything.
+## 1. Confirm the project and actual permissions
 
-**Agent: work through these at the end of setup and report what you found.** If item 2 is
-wrong, stop there — do not carry on and hope.
+Check that the active project's working directory is the installed folder containing
+`AGENTS.md`. Merely copying files there or changing a shell directory is not a project
+handoff. If the task is still attached to the download, follow `START-HERE.md` to reopen.
 
----
+Check the active permissions shown by Codex, rather than assuming a label such as `Auto`
+guarantees particular behaviour. The trial default is workspace-limited editing with
+approval for actions requiring broader access, not Full access. Where effective settings
+are visible, the conventional configuration is `workspace-write` with `on-request`
+approvals. If the configuration differs or is not visible, describe what you can establish
+and have Steve help check it. Do not change global settings or broaden access silently.
 
-## 1. Know what `Auto` actually protects
+Explain in two sentences: the agent can normally edit within its permitted workspace;
+sandbox boundaries and approval rules determine which other actions need approval.
+Reading outside the folder does **not** reliably trigger approval. Additional writable
+folders, platform behaviour and configuration can affect the boundary. Do not claim that
+all outside-folder actions ask, or deliberately probe unrelated files to demonstrate it.
 
-**The trial runs in `Auto`.** What that means, plainly:
+`AGENTS.md` governs how you should behave; it is not a technical lock. An explicit request
+to edit a file authorises the relevant change, without a second confirmation. The teacher
+still reviews the output, and original student work stays unchanged.
 
-- **Outside this folder, nothing happens without the teacher's say-so.** Auto stops and
-  asks. That boundary is real, and it is the protection worth having.
-- **Inside this folder, the agent can create, edit and overwrite files without asking.**
+## 2. Demonstrate saving and recovery with a disposable file
 
-`AGENTS.md` rule 2 — propose before you move, rename, delete or rewrite an existing file —
-is therefore an **instruction, not a lock**. Auto will not stop an agent that ignores it.
-Follow the rule anyway; it is the difference between a teacher trusting this and not. But
-do not tell a teacher that the setting is what keeps their work safe, because it is not.
+Create `My Subject/setup-practice.txt` containing only invented practice text, choosing a
+new filename if that name exists. Tell the teacher this is a disposable example. Show its
+location, make one small change, and show the result. This setup exercise authorises those
+edits only; do not use an existing README or teaching resource for the demonstration.
 
-**Agent: show them this at setup, don't describe it.** They should watch it happen once,
-deliberately, in the first ten minutes rather than discovering it on a file that mattered.
+With Steve, show OneDrive version history if it is available and a prior version has synced.
+If no prior version is available, report that recovery has not yet been demonstrated; do
+not promise that sync immediately provides a restorable version. Restore the practice text
+from the known original for the exercise and clearly distinguish that from a OneDrive
+restore. Leave the harmless file for the teacher to inspect. Never infer permissions from
+whether an approval happened to appear during this example.
 
-1. Add a blank line to the end of `My Subject/README.md`. It goes through without a prompt.
-   Say so, and undo it.
-2. Then try to touch something outside the folder — reading the parent directory is enough.
-   Codex will stop and ask. Say so, and decline it.
+## 3. Confirm context
 
-Then say, in two lines: inside this folder you can change things without asking, and you
-are instructed to propose first; outside it, they get asked every time.
+Read `AGENTS.md`, the school context, boundaries and exclusions. Give one specific detail
+from `Context/meridan.md` as evidence that you have read it. Say: deidentified student work
+without sensitive information is permitted; original writing is preserved and feedback
+is saved separately. Local file storage does not mean AI processing is offline.
 
-**Three things follow from that, and they matter more than the setting does.**
+## 4. Check curriculum capability
 
-- **The recovery path is OneDrive version history**, not the approval prompt. If the agent
-  overwrites something it shouldn't have: right-click the file, Version History, restore.
-  It is in `Context/troubleshooting.md`. Tell them at setup, before they need it.
-- **The supplied files stay supplied.** Never write into `Context/meridan.md`,
-  `boundaries.md`, `exclusions.md`, `codex-setup.md` or `troubleshooting.md`. Auto would let
-  you. Don't.
-- **"No student files in this folder" is now load-bearing.** Anything in here is reachable
-  and editable without a prompt. That is the reason for the rule, not an abstract one.
+The EDU Australian Curriculum plugin is intended to be installed before orientation.
+Check whether its tools are actually available and try a small read-only curriculum
+lookup relevant to the teacher's subject if known. Report success only from a returned
+result. If unavailable or failing, tell Steve and record the limitation.
 
-**During setup itself, expect to be asked.** Copying the kit from the download into OneDrive
-crosses outside whatever folder Codex started in, so Auto will stop and ask. That prompt is
-the boundary working, not a failure — say yes and carry on, and say to the teacher that this
-is exactly the behaviour described above.
+For curriculum alignment, use official text returned by the tool or supplied by the teacher,
+recording its source, curriculum version and code where available. Never invent descriptor
+wording or codes. Unrelated work can continue while the plugin is unavailable.
 
-A teacher who wants tighter control can say so and work in a read-only mode, approving each
-step. It is their machine. Most will not want to, and Auto is the right default for the
-trial — but they should know which one they are in.
+## What to report
 
-## 2. Codex is open in the installed folder
+Keep it short:
 
-Codex reads `AGENTS.md` from the folder it is opened in. Open it one level up, or leave it
-pointed at the original download instead of the installed copy in OneDrive, and the agent
-gets none of this: no school context, no boundaries, no routines. It will still answer, and
-it will sound fine, which is what makes this worth checking rather than assuming.
+- Installed project path, and permissions verified or still needing Steve's check.
+- Practice file location and what recovery was actually demonstrated.
+- One school-context detail.
+- Curriculum tool result or limitation and the usable fallback.
 
-**Required:** Codex open in the installed kit folder in the teacher's own OneDrive — the
-folder that contains `AGENTS.md` — and not in the download.
-
-## 3. The context actually loaded
-
-Config being right is not proof the files were read.
-
-**Agent: prove it.** Say one specific thing that could only have come from
-`Context/meridan.md` — not "I've read the school context", an actual detail. If you cannot,
-say so plainly and check where you are running from.
-
-## 4. Curriculum text has a source
-
-`AGENTS.md` rule 4: curriculum wording is quoted from official text, never recalled. That
-rule needs something to quote from.
-
-**The EDU Australian Curriculum plugin is installed for this trial.** It is the source of
-truth for curriculum wording — point at it, quote from it, and say when a descriptor came
-from it.
-
-It is early-stage software the teachers are helping to shape, so treat a glitch as useful
-information rather than a failure, and say when it looks wrong instead of smoothing over it.
-
-Where the plugin does not cover something, the fallback stands: official descriptor text
-saved into `My Subject/` before any alignment work. Never write curriculum wording from
-memory in the gap — you will produce something fluent and wrong that passes a quick read.
-
----
+Record these results and the app version if visible in `Context/setup-state.md`.
+Do not claim a version or setting was verified when it was not. At the end of orientation,
+show the teacher how to reopen this project and start another task.
 
 ## Model
 
-Use the strongest reasoning model available on the account for planning, alignment and
-review work. Faster models are fine for small edits and tidying.
+Use the account's available reasoning model for planning and review. Keep the default
+unless the task needs a change; teachers do not need to choose a model to get started.
 
-This is a preference, not a boundary — nothing in the kit breaks if it is wrong, and it is
-the teacher's to change.
+## Reference
 
-## What does not belong in the folder
+Guidance checked against official OpenAI documentation on 7 September 2026; this is a
+documentation check, not certification on school-managed devices:
 
-No student files. Not to test something, not "just for a minute". The folder syncs to
-OneDrive and the agent reads what is in it. See `Context/boundaries.md`.
+- [Sandbox and approval controls](https://learn.chatgpt.com/docs/agent-approvals-security)
+- [How AGENTS.md is discovered](https://learn.chatgpt.com/docs/agent-configuration/agents-md)
 
----
-
-## Agent: what to report
-
-At the end of setup, four lines, no more:
-
-- what the two checks in item 1 actually did — the in-folder edit and the outside-folder stop,
-- the full path of the folder you are running in,
-- one detail from `Context/meridan.md`, as proof it loaded,
-- whether the curriculum plugin is there and responding.
-
-If item 2 is wrong — you are running from the download, or a folder that has no
-`AGENTS.md` — say so and stop. Everything else in this folder is void until that is fixed.
+Recheck actual behaviour on the school Mac and Windows app versions before rollout.

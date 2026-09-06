@@ -1,7 +1,7 @@
 # Shared troubleshooting
 
-**Maintained centrally by Steve Reid.** Every teacher in the trial has a copy of this file
-and reads the same version, so one person's problem becomes everyone's fix.
+**Maintained centrally by Steve Reid.** Teachers receive a copy of this file with the kit.
+Distribute updated copies after a shared fix; local copies do not update themselves.
 
 **Agent: read this before telling a teacher that something can't be done.** If you solve
 something that isn't listed here, say so, and suggest the teacher mention it so it can be
@@ -10,13 +10,16 @@ added for everyone.
 **Teachers: don't edit this file** — your edits will be overwritten when an updated version
 is sent round. Put local notes in `Context/my-profile.md` instead.
 
-*Last updated: <date> — starter version, before the trial began.*
+*Last updated: 7 September 2026.*
 
 ---
 
 ## Getting help at all
 
-**The agent is the first line of support.** If something isn't working, tell your agent
+**During orientation, Steve is in the room.** If a quick fix does not work, ask him
+to help with the failed step.
+
+**After orientation, the agent is the first line of support.** If something isn't working, tell your agent
 before you email anyone. It has these notes, it can read the actual error, and it can try
 things. If it can't solve it, it will write up the problem — what you were doing, what
 happened, what it already ruled out — and you can send that on. A diagnosed problem gets a
@@ -55,17 +58,13 @@ source of truth.
 
 ### The agent rewrote a file I didn't want touched
 
-`AGENTS.md` says it must propose before changing an existing file — but nothing in the Codex
-settings makes it. In `Auto`, the mode this trial uses, the agent can edit anything inside
-your kit folder without asking. Outside the folder it always asks. See
-`Context/codex-setup.md`.
+An explicit editing request authorises that scoped change, but not unrelated edits.
+Tell the agent what went beyond your request. `AGENTS.md` is an instruction, not a lock;
+the actual permissions determine technical access. See `Context/codex-setup.md`.
 
-So this is a rule the agent follows, not a lock. **The fix is OneDrive version history** —
-right-click the file, Version History, restore. Worth doing once now, on any file, so you
-know where it is before you need it.
-
-Tell the agent it did it, so it stops. If it keeps doing it, get that written into
-`Context/my-profile.md` under Working preferences, and mention it to Steve.
+For recovery, check OneDrive version history for a synced prior version before restoring.
+If there is no version available, tell Steve; do not promise recovery or overwrite more
+files trying to fix it. Practise on the disposable setup file during orientation.
 
 ### Output is too long / too generic
 

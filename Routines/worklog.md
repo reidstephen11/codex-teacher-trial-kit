@@ -66,7 +66,7 @@ a second line if you must, but if you need a third you are writing a report, not
   wasted twenty minutes, that is exactly the line worth having.
 - **Do not editorialise.** No "successfully", no "great progress", no assessment of how the
   trial is going.
-- **No student names, no identifying details, nothing from the red list in
+- **No student names, no identifying details, no sensitive material excluded by
   `Context/boundaries.md`.** The same rule as the session log. "The Year 9 folio task" is
   fine; a student's name is not, even in a file nobody else reads.
 - **Never send it, and never include it in anything shared.** The worklog is working

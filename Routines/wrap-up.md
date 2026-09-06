@@ -64,15 +64,15 @@ plan.>
 - **Do not estimate time saved.** You will get it wrong and the number will be repeated back
   at you for a year. If the teacher volunteers a figure, quote it as theirs.
 - **Do not editorialise about the trial** or about how promising something is.
-- **No student names, no identifying details, nothing from the red list in
+- **No student names, no identifying details, no sensitive material excluded by
   `Context/boundaries.md`** — a log is a shared document by design.
 - **"Nothing this session" is a legitimate entry** for *What surprised me*. An empty field is
   a finding. Don't pad it.
 
 ## Sharing
 
-Logs are the teacher's. Nothing syncs anywhere on its own, and nothing is sent without them
-choosing to send it.
+Logs are the teacher's and sync within their Department OneDrive. The kit does not collect
+them for Steve. Nothing is sent to another person without the teacher choosing to send it.
 
 When the log is saved, offer once:
 

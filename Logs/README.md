@@ -13,7 +13,8 @@ anyone's impression of how it went.
 argued with. Where the agent got it wrong, or wasted your time, or produced something
 unusable — leave that in.
 
-**These are yours.** Nothing syncs to anyone. Nothing is sent unless you choose to send it,
+**These are yours.** They sync within your Department OneDrive; the kit does not collect
+them for Steve. Nothing is sent to another person unless you choose to send it,
 session by session. The agent will ask once at the end of each wrap-up and won't ask twice.
 
 **Nothing identifying goes in a log** — no student names, no details that would identify a

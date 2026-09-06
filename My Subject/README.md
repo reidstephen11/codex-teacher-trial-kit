@@ -13,4 +13,6 @@ and where you take it are yours. Ten teachers going ten different directions is 
 Rename this folder if you like. Delete this file once you've read it.
 
 **One thing that isn't yours to change:** `../Context/boundaries.md` applies in here too. No
-student work with names attached, in any folder, at any point.
+identifying or sensitive information. Deidentified, non-sensitive student work is allowed;
+prepare that copy before giving it to Codex. Keep original student writing unchanged and
+save feedback separately.

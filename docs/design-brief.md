@@ -30,6 +30,10 @@ The ZIP is the installer, not just a bundle of files. The agent unpacks itself, 
 
 This is deliberate — teachers experience the agent doing real work before anyone explains what an agent is. The setup routine must finish by telling them what it just did and where things now live, so nobody is left with a working setup they don't understand.
 
+**Student-work scope:** deidentified student work without sensitive information is allowed.
+The teacher prepares the suitable copy before giving it to Codex. Original writing stays
+unchanged; feedback is saved separately.
+
 **Privacy position:** each teacher's folder lives in their own OneDrive. Nothing syncs to Stephen's. Sharing is opt-in throughout.
 
 ---
@@ -94,7 +98,8 @@ Patterns worth surfacing:
 
 ## Support behaviour
 
-The default help path is the agent itself, not Stephen's inbox.
+Stephen is in the room for orientation and helps with setup blockers. After orientation,
+the default help path is the agent itself.
 
 Bake into the config that when a teacher is stuck, the agent attempts to resolve it first, and only escalates by drafting a message to Stephen if it can't. Issues that reach Stephen then arrive already diagnosed rather than as "it's not working".
 
@@ -104,9 +109,9 @@ The shared troubleshooting file means one person's problem becomes everyone's fi
 
 ## Orientation day workflow
 
-1. Email the ZIP; teachers download it and point Codex at it.
-2. Agent unpacks, installs into OneDrive, and reports back what it did and where things now live.
-3. Agent checks how Codex itself is configured against `Context/codex-setup.md` and reports back — approval mode, which folder it is running in, proof the context loaded, curriculum source. Approval mode is the one that cannot be left to chance: propose-before-change is an instruction in `AGENTS.md`, and a Codex set to approve its own edits overrides it silently. Confirm the exact setting names on a Department machine before the day and write them into that file, so every teacher gets the same version.
+1. Email the ZIP; teachers unpack it and open the folder as a Codex project.
+2. Agent copies into Department OneDrive without overwriting an existing installation, then hands over to a fresh task in that installed project. Setup progress is saved for resuming.
+3. Agent checks the actual permissions, installed project, loaded context and curriculum source using `Context/codex-setup.md`. Demonstrate saving and recovery on a disposable file; do not promise that every outside-folder action asks. Record device/app checks before the day.
 4. Agent reads the school context and reflects it back to them. This is the moment it lands, because it's already contextualised.
 5. Agent runs the onboarding interview.
 6. Teacher completes **one real task they brought with them** — a unit they haven't read, a set of feedback comments, whatever is genuinely annoying them. Not a demo task.
@@ -140,11 +145,9 @@ repository and out of the teacher ZIP.
 - [x] Onboarding interview routine — `Routines/onboarding-interview.md`
 - [x] Wrap-up skill — `Routines/wrap-up.md`
 - [x] Shared troubleshooting file starter — `Context/troubleshooting.md`
-- [x] Codex configuration — `Context/codex-setup.md` (approval mode `Auto`; EDU plugin in
-      on day one). Confirmed: `Auto` does anything inside the folder and asks for anything
-      outside it, so propose-before-change is an instruction the agent follows, not a
-      setting that enforces it. The kit says so plainly, the agent demonstrates both
-      behaviours at setup, and the recovery path is OneDrive version history.
+- [x] Codex configuration guidance — `Context/codex-setup.md`; actual permissions checked
+      in the installed project, with a disposable save/recovery exercise.
+- [ ] Verify setup on representative Department Mac and Windows app versions before rollout.
 - [x] Worklog routine — `Routines/worklog.md`, agent-maintained, read at wrap-up
 - [x] Synthesis cadence and where logs land — `docs/Trial_Operations.md` (fortnightly from week 3,
       proposed; collection point still to decide)
