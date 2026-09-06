@@ -27,7 +27,8 @@ Everything else on the day can be fixed later.
 - [ ] Codex installed on each machine, OneDrive signed in. An IT job, not a day-one job.
 - [ ] EDU Curriculum plugin installed, and a named contact from that team who will answer
       quickly during the trial.
-- [ ] Run the whole kit yourself, start to finish, on a machine like theirs. Not in a cloud
+- [ ] Run the whole kit yourself on representative school Macs and Windows PCs. Record
+      app versions and observed permissions; use `docs/setup-checks.md`. Not in a cloud
       workspace — the install writes into OneDrive and that is the part that breaks.
 - [ ] Close the open decisions at the foot of `Trial_Operations.md`. Two of them bite on the
       day: where logs get sent, and whether profiles are collected at orientation.
@@ -65,22 +66,22 @@ teacher who opens it a level up, or leaves it pointed at the download, gets none
 school context — and the agent will still answer, fluently, which is what makes it hard to
 spot from across the room.
 
-Unpack the ZIP first. Open Codex in the unpacked folder.
+Unpack the ZIP first. Open Codex in the unpacked folder. After the copy, help the teacher
+open the installed folder as a project and start a fresh task there. Changing a shell
+directory does not switch the project. Resume from `Context/setup-state.md`.
 
 ### 10–25 · Install and config
 
-Agent-led. Two moments worth naming out loud when they happen:
+Agent-led, with you available for the project handoff and settings UI. Check the actual
+permissions against `Context/codex-setup.md`; do not promise an outside-folder prompt.
+The agent creates a disposable practice file, edits it and shows where it was saved.
+Show OneDrive version history if a prior version has synced; record honestly if recovery
+has not yet been demonstrated. Do not test permissions by probing unrelated files.
 
-- **A prompt while it copies into OneDrive.** That is Auto asking before it touches anything
-  outside the folder. The boundary working, not a fault.
-- **The two demonstrations in `Context/codex-setup.md`** — an in-folder edit that goes
-  through without asking, an outside-folder request that stops. Let the agent do it. This is
-  where the room learns what the tool will and won't do on its own, and it lands far better
-  as a demonstration than as a warning.
-
-Say the honest version once: inside their folder the agent can change things without asking,
-it is instructed to propose first, and OneDrive version history is the undo. Show someone
-where version history is if there is time.
+Check the installed project path and one school-context detail. Confirm the curriculum
+tool responds, or use supplied official text for alignment. A missing tool should not
+prevent unrelated work. Deidentified, non-sensitive student work is permitted; staff
+prepare suitable copies before giving them to the agent.
 
 ### 25–35 · The interview
 
@@ -111,7 +112,7 @@ like: *"Their working copy stays theirs and stays on their machine; the copy I t
 the baseline I put your December answers next to."*
 
 Say it out loud rather than collecting quietly later. The kit's privacy position is that
-nothing syncs anywhere, `my-profile.md` is gitignored by design, and a copy appearing on
+nothing is automatically collected for you, `my-profile.md` is gitignored, and a copy appearing on
 your drive without being mentioned looks like the promise moved.
 
 Then: how to send a log, that sending is optional every time, and that the agent is the
@@ -120,8 +121,9 @@ first line of support — tell it before emailing anyone.
 ## If someone gets stuck
 
 Do not stall the room. `START-HERE.md` has a manual fallback at the bottom: copy the folder
-into OneDrive by hand, open Codex there, and say *"Read AGENTS.md, then run the onboarding
-interview in Routines/."* That reaches the same place.
+into an empty OneDrive destination by hand, open that folder as a project, and say
+*"Read START-HERE.md. This is my installed folder; resume setup here."* This keeps the
+same location, permissions and context checks as the assisted route.
 
 Anything you fix twice in the room belongs in `Context/troubleshooting.md` that afternoon,
 while you still remember the exact wording of the error.
@@ -131,6 +133,6 @@ while you still remember the exact wording of the error.
 - [ ] Profiles filed as the baseline. Note anyone who did not hand one over.
 - [ ] Whatever broke twice, written into `Context/troubleshooting.md` and sent round.
 - [ ] Anything the config section got wrong, corrected in `Context/codex-setup.md` — it is
-      centrally maintained, so one fix reaches everyone.
+      centrally maintained, so the revised kit can be distributed to everyone.
 - [ ] First synthesis is week 3. From then, a teacher whose logs stop is a finding worth
       asking about at the time rather than guessing at in December.

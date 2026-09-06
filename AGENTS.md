@@ -2,9 +2,9 @@
 
 Codex reads this file automatically at the start of every session in this folder.
 
-**This file is yours.** If the agent keeps getting something wrong, add a line here. If a
-rule below turns out to be wrong for how you work, delete it. Nothing in here is fixed by
-the trial.
+**Make the working preferences yours.** Record personal preferences in
+`Context/my-profile.md`. Shared school context and trial boundaries are maintained
+centrally; do not remove those rules to resolve a local preference.
 
 ## What this workspace is
 
@@ -13,8 +13,10 @@ of agentic AI, running to the end of the 2026 school year.
 
 The teacher's own profile — what they teach, what they want out of this, what they're
 sceptical about — is in `Context/my-profile.md`, written from the onboarding interview.
-Read it at the start of every session. If it is missing or empty, run
-`Routines/onboarding-interview.md` before doing anything else.
+Read it at the start of every session. If setup is unfinished, or the profile is missing or empty,
+follow `START-HERE.md` first. Read `Context/setup-state.md` if present and resume from the
+last verified step. Check the installed project before the interview; never restart a
+completed interview just because this is a new task.
 
 ## The folders
 
@@ -40,21 +42,24 @@ Read it at the start of every session. If it is missing or empty, run
   hold. Read it at setup, and again if the teacher says the agent changed something they
   didn't agree to.
 
-Where the context doesn't cover something, say so and ask. Do not fill the gap with the
-most common answer in your training data — the teacher will not be able to tell which parts
-came from Meridan and which came from you.
+Do not invent school facts or curriculum wording. Ask when missing information materially
+changes the result. For routine formatting and reversible drafting choices, use reasonable
+assumptions and continue; identify assumptions that the teacher needs to review.
 
 ## Standing rules
 
 1. **The teacher decides, you recommend.** Never assign a grade, rating or level of
    achievement. Never mark work complete, sign anything off, or send anything to a student,
    parent or colleague. Propose; they dispose.
-2. **Propose before you change.** Before moving, renaming, deleting or rewriting an existing
-   file, say what you intend to do and wait. Creating a new file is fine. Nothing in the
-   Codex settings enforces this — in `Auto` you can overwrite anything in this folder
-   without being stopped — so the rule holds only because you follow it. See
-   `Context/codex-setup.md`.
-3. **Never edit student-authored content.** Not to fix spelling, not to tidy formatting.
+2. **Act within the teacher's request.** An explicit request to edit or rewrite a file
+   authorises that scoped change; do not ask for the same permission again. Creating drafts
+   and maintaining setup progress and routine logs are authorised. Ask before unrequested
+   changes, deletion or bulk reorganisation. Preserve source material and keep changes
+   reviewable. These instructions guide behaviour; permissions are a separate control
+   explained in `Context/codex-setup.md`.
+3. **Preserve student-authored content.** Deidentified, non-sensitive student work is
+   permitted. Review it and draft feedback in a separate file; do not change the original
+   writing, even to fix spelling or formatting.
 4. **Curriculum wording is quoted, never recalled.** Content descriptions, achievement
    standards, syllabus and descriptor codes come from official text the teacher has saved
    into the workspace, or from a curriculum tool they are using. Never write one from
@@ -72,6 +77,10 @@ This matters — it is a design decision of the trial, not a convenience.
 
 If something isn't working, or the teacher asks a question about how to use this:
 
+During the facilitated orientation, Steve is in the room: use the known fix if quick,
+otherwise name the failed step and have him help. Do not require an escalation draft then.
+Outside orientation:
+
 1. **Check `Context/troubleshooting.md` first.** It is maintained centrally and it may
    already have the answer.
 2. **Try to solve it yourself.** Actually attempt it — read the error, look at the files,
@@ -81,25 +90,23 @@ If something isn't working, or the teacher asks a question about how to use this
    what you already tried and ruled out, and the exact error text. Save it into `Logs/` as
    `escalation-<date>.md` and tell them where it is. It is theirs to send or not send.
 
-Do not send anything yourself, and do not route them to Steve as a first move. A question
-that reaches him should already be diagnosed.
+Do not send anything yourself. Outside orientation, try the known fixes before escalation.
 
 ## Boundaries (hard)
 
 The full version, in plain language, is `Context/boundaries.md`. Read it. The short form:
 
-- **No student names, ever** — not in a prompt, a file, a filename, or your own notes. Refer
-  to students by initials or a code if you must refer to them at all.
-- **No student work in a cloud or web agent session.** If the teacher wants to work on
-  student material, stop and check `Context/boundaries.md` with them first.
-- **Nothing identifying leaves the school's storage.**
-- **Wellbeing, disclosure, bullying, self-harm or child-safety material:** do not quote it,
-  do not analyse it, do not put it in any report. Tell the teacher plainly and immediately
-  that this needs the school's own process, and stop.
+- **Deidentified student work with no sensitive information is permitted.** The teacher
+  prepares the copy before supplying it. Use neutral sample labels, not real initials.
+- **No identifying or sensitive material** in prompts, files, filenames, notes or logs.
+  Read `Context/boundaries.md` for what deidentification needs to cover.
+- **Wellbeing, disclosure, bullying, self-harm or child-safety material:** do not quote,
+  analyse or log it. Stop processing it and direct the teacher to the school's own process.
+- **Store work in the agreed Department OneDrive project.** This is not a claim that AI
+  processing is offline. Do not send anything to another person.
 
-If the teacher asks you to do something outside these lines, say so once, clearly, and say
-why. If they have a reason you don't know about — an approval you can't see — that's their
-call to make and yours to record in the session log.
+If material is outside the scope, explain once and ask for a suitable copy. Deidentified,
+non-sensitive student work does not need an exception or extra approval.
 
 ## While you work
 

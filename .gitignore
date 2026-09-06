@@ -9,3 +9,6 @@ Collected logs/
 
 # OS
 .DS_Store
+
+# Local setup progress
+Context/setup-state.md

@@ -1,104 +1,69 @@
 # What can and can't go into this tool
 
-Two minutes. Read it once, properly, and you won't have to think about it again.
+**Teacher work and deidentified student work are permitted, provided they contain no
+sensitive information.** This is the trial scope confirmed by Steve Reid. It applies to
+prompts, attachments, filenames, file contents and logs, regardless of the session type.
 
-The short version: **the tool is for your work, not your students' data.** Everything below
-is that sentence, unpacked.
+## Go ahead
 
----
+- Non-sensitive unit plans, lesson plans, rubrics, assessment tasks and teaching resources.
+- Public curriculum documents and school materials suitable for this use.
+- Made-up examples and deidentified student work with no sensitive content.
+- Aggregate class results that cannot identify individual students.
 
-## Green — go ahead, no permission needed
+Authorship alone does not make material suitable: your own emails and notes can still
+contain sensitive information. Keep colleagues' private information out too.
 
-Your own professional work. If it's something you wrote, or something the school published,
-it's fine.
+## Prepare student work before giving it to Codex
 
-- Unit plans, lesson plans, assessment tasks, rubrics, criteria sheets
-- Resources, slides, handouts, worksheets, posters
-- Curriculum documents, syllabus text, achievement standards
-- School policies, published documents, your own emails and notes
-- Anonymous or made-up examples of student work you've written yourself to illustrate a point
-- Anything already public
+The teacher prepares a deidentified copy outside Codex first. Remove names, student
+numbers, contact details, identifying filenames, comments, tracked-change identities and
+document author metadata. Check the content itself for identifying references, images,
+recordings and combinations of details that could identify someone.
 
-## Amber — fine, but think for a second
+Use neutral labels such as `Sample A`, not real initials or student identifiers. Keep any
+mapping back to students outside the AI workspace. Removing a name does not make a
+sensitive account suitable: exclude the sensitive content as well, or choose another sample.
+Do not give Codex the identifying original to deidentify it for this trial.
 
-- **Colleagues' work.** Fine for your own use. Ask before you share back anything the agent
-  rewrote for them — people are reasonably touchy about their planning.
-- **Aggregate class data with no names attached** — "22 of 28 got question 4 wrong". Fine.
-  A spreadsheet with a name column is not; strip it first.
-- **Anything you'd be uncomfortable seeing quoted back at a staff meeting.** Not forbidden.
-  Just decide deliberately rather than by accident.
+Once that suitable copy is supplied, proceed with the requested review or feedback without
+repeated permission questions. Preserve the student's writing; save feedback or suggested
+changes separately. The teacher makes assessment and grading decisions.
 
-## Red — no
+## Keep out
 
-- **Student names.** Not in a prompt, not in a file, not in a filename, not in something you
-  paste in "just to check". If you need to refer to a student, use initials or a code.
-- **Student work with anything identifying attached to it.** Names, student numbers, class
-  lists, photos, recordings, work that names the student inside it.
-- **Anything about an individual student** — behaviour records, adjustments, medical or
-  wellbeing information, NCCD material, disability or health data, incident reports, contact
-  with parents.
-- **Wellbeing and child-safety material.** Disclosures, self-harm, bullying, anything from a
-  student that worries you. This does not go near an AI tool at any stage. It goes to the
-  school's own process, immediately.
-- **Staff personnel information** — performance, complaints, HR matters, anyone's private
-  circumstances.
-- **Login details, passwords, network or system credentials.**
-- **Departmental material marked confidential or not-for-distribution.**
+- Identifiable student information, including identifying student work, class lists,
+  photos, recordings and filenames.
+- Behaviour records, individual adjustments, medical or wellbeing information, NCCD
+  material, disability or health data, incident reports and private parent communications.
+- Disclosures, bullying, self-harm and child-safety material, even if names are removed.
+- Staff personnel information: performance, complaints, HR matters or private circumstances.
+- Passwords, credentials and material marked confidential or not-for-distribution.
 
----
+The same exclusions apply to logs, troubleshooting notes and error messages. Do not copy
+excluded content into an explanation of why a task stopped.
 
-## Why the line is where it is
+## If unsuitable material appears
 
-Two separate reasons, and they matter for different situations.
+Stop work on that material, say what category is the problem without repeating private
+content, and ask for a suitable prepared copy. Do not quote, summarise, copy or log the
+excluded material. For wellbeing or child-safety material, stop processing it and direct
+the teacher to the school's own process. Tell Steve if unsuitable material has already
+been supplied; do not try to resolve an exposure simply by deleting a local file.
 
-**Privacy.** Student information is held by the Department under Queensland privacy law, not
-by you personally. Putting it into a tool outside departmental systems is a disclosure, and
-it isn't a teacher-level decision to make. That doesn't change because the tool is useful, or
-because you'd delete it afterwards.
+Do not invent assurances about incident outcomes or whether deletion removes prior
+processing. Department OneDrive is the working storage location, not a promise that Codex
+processes files offline or that content never reaches the AI service.
 
-**Judgement.** The agent is fluent and confident and gets things wrong in ways that read
-perfectly well. That's survivable on a unit plan you're going to review anyway. It is not
-survivable on a decision about a child.
+## Preferences and trial rules
 
-## If you think you have a genuine reason to cross the line
+Teachers can change their working preferences and organise their own files. This shared
+boundary is maintained by Steve; it is not a personal preference to delete when a task is
+inconvenient. If the scope needs changing, discuss it with Steve outside the immediate job
+and update the shared guidance consistently. Deidentified, non-sensitive student work
+already fits the scope and needs no exception.
 
-You might. Some tasks really do need student work, and there may be an approved way to do
-them.
+The agent drafts; the teacher reviews and decides what to use or share. Nothing is sent to
+students, parents or colleagues by the agent. Session-log sharing remains optional.
 
-Don't decide it yourself in the moment, and don't ask the agent for permission — it doesn't
-have any to give. Talk to Steve, and if it's about students, expect it to need more than
-Steve. This trial is deliberately scoped to teacher work so that nobody has to make that call
-at 9pm on a Sunday.
-
-## What to do if you've already crossed it
-
-Tell Steve. Don't quietly delete it and hope.
-
-Nothing bad happens to you for saying so early — this is a voluntary trial of a new tool and
-finding the edges is part of what it's for. A mistake reported on the day is an administrative
-matter; the same mistake found in three months is a different conversation.
-
----
-
-## For the agent
-
-Enforce this without being tedious about it.
-
-- If the teacher heads towards a red item, stop and say which line and why, in one or two
-  sentences. Don't lecture and don't repeat it if they've acknowledged it.
-- If you see a student name in a file you've been pointed at, say so immediately, don't quote
-  it, and don't copy that file anywhere.
-- If wellbeing or child-safety material appears, stop entirely. Don't summarise it, don't
-  quote it, don't put it in a session log. Say plainly that this needs the school's process
-  and that you're not the right place for it.
-- Never record a red item in `Logs/` — including in a log describing something that went
-  wrong.
-- If the teacher says they have approval for something in the red list, take them at their
-  word, note in the session log that they said so, and carry on. You are not the compliance
-  system.
-
----
-
-> **Maintained by Steve Reid, HOD — ITIL.** This reflects the trial's scope and the
-> departmental position as understood at the start of the trial. If departmental guidance
-> changes during 2026, this file changes and the change will be sent round.
+Maintained by Steve Reid, HOD — ITIL. Scope updated 7 September 2026.
